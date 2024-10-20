@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     />
     <script src="utility-functions.js"></script>
+    <script src="contact-form.js"></script>
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body class="bg bg-dark">
@@ -26,104 +27,31 @@
         <a class="nav-link active" href="contact.html">Contact</a>
         <a class="nav-link" href="about.html">About Us</a>
       </nav>
-      <script>
-        function listSpots() {
-          allSpots = [
-            "Valet available",
-          "Parallel unavailable",
-          "Short-term available",
-          "Long-term available",
-          "D.I.Y unavailable",
-          "Climate controlled unavailable",
-          "Party buses and V.I.P unavailable",
-        ];
-          for (position = 0; position < allSpots.length; position++) {
-            listSpots = allSpots[position];
-            spotsTag.innerHTML =
-              spotsTag.innerHTML +
-              '<li class="list-group-item">' +
-              listSpots +
-              "</li>";
-          }
-        }
-      </script>
     </header>
-    <main id="mainTag">
-      <p></p>
+    <main">
+      
+<h2 class="text-center p-3">We would love to hear from you!</h2>
+
+      
+      <p class="border border-5 border-info bg-black p-2 text-info rounded text-center">BOOK AN APPOINTMENT</p>
+      <form class="text-center" onsubmit="myProcessForm(event)">
+        <label for="name">Name:</label>
+        <input class="text-primary bg-black" required type="text" placeholder="John Doe" id="name"><br><br>
+        <label for="email">Email:</label>
+        <input class="text-primary bg bg-black" required type="text" placeholder="R4kS3@example.com" id="email"><br><br>
+        <label for="phone">Phone:</label>
+        <input class="text-primary bg-black" required type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label for="date">Date:</label>
+        <input class="text-secondary bg-black" type="date" id="date" name="date"><br><br>
+        <label for="time">Time:</label>
+        <input class="text-secondary bg-black" type="time" id="time" name="time"><br><br>
+        <label for="notes">Message:</label>
+        <textarea class="text-primary bg-black" id="notes" name="notes"></textarea><br><br>
+        <input class="text-primary bg-black" type="submit" value="Schedule Appointment">
+      </form>
       <div id="outputTag"></div>
-      <button onclick="listSpots()">Click to see spots in your area</button>
-      <ul id="spotsTag" class="list-group">
-    <li class="list-group-item text-center fw-bold">𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆𒅒𒈔𒅒𒇫𒄆</li>
-      </ul>
-      
-      <script>
-      function display2(myMessage) {
-    
-    //STEP: Let it display the message.
-    //PSEUDO: Display myMessage
-    document.write(myMessage);
-  }
-
-  
-  
-  
-//STEP: Create command called ask. Let is accept a message.
-  //PSEUDO: Create command called ask with myMessage
-  function ask3(myMessage) {
-    
-    //STEP: Let it prompt the user with that message. Store it in userText.
-    //PSEUDO: userText = prompt(myMessage)
-    userText = prompt(myMessage);
-
-    //STEP: Convert userText to a number. Store in userNumber.
-    //PSEUDO: userNumber = Number(userText)
-    userNumber = Number(userText);
-
-    //STEP: Compare is userNumber equal to NaN. Store it in result.
-    //PSEUDO: isNaN = userNumber === NaN
-    isNotNumber = isNaN(userNumber);
-
-    //STEP: If result is "yes"
-    //PSEUDO: if isNaN
-    if (isNotNumber) {
-      
-      //STEP:  Send out userText.
-      //PSEUDO: return userText
-      return userText;
-
-      //STEP:  Otherwise
-      //PSEUDO: otherwise
-    } else {
-      
-      //STEP: Send out userNumber.
-      //PSEUDO: Return userNumber
-      return userNumber;
-    }
-  }
-  
-
-</script>
-<script>
- myInput = ask3("enter your zip code.");
-  display2("You typed " + myInput + ". ");
-  display2("ZIP CODE " + typeof myInput + ". <br>")
-
-    </script>
-      
-      
-<h2>Contact Us</h2>
-<form>
-  <label for="name">Name:</label><br>
-  <input type="text" id="name"><br>
-  <label for="email>">Email</label><br>
-  <input type="text" id="email"><br>
-  <label for="message">Message:</label><br>
-  <textarea id="message">
-  </textarea>
-  <br>
-  <input type="submit" value="Submit">
-</form>
-      <p>YOU CAN CALL US AT 555-555-5555 OR EMAIL US AT 9vS6M@example.com</p>
+<hr>
+<p class="text-center">tel: 555-555-5555 or email us at: p9vS6M@example.com</p><br>
     </main>
   </body>
 </html>
