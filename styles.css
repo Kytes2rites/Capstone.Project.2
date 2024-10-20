@@ -17,10 +17,26 @@ h3:hover {
 }
 
 
-#message {
-  width:100%;
+#date {
+  width:50%;
+}
+
+#time {
+  width:50%;
 }
 
 #email {
-  width:100%;
+  width:50%;
+}
+
+#phone {
+  width:50%;  
+}
+
+#name {
+  width:50%;
+}
+
+#notes {
+  width:50%;
 }

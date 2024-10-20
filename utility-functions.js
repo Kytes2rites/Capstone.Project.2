@@ -9,6 +9,14 @@ function convertCard(cardObject) {
   return cardString;
 }
 
+function display(message) {
+  debugger;
+  document.write(message);
+}
+
+function output(message) {
+  outputTag.innerHTML += message + "<br>";
+}
 
   // const cards = [card1, card2, card3];
         // for (position = 0; position < cards.length; position++) {
