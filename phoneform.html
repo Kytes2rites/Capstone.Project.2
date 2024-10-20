@@ -1,0 +1,20 @@
+<html>
+    <head>
+            <script src="utility-functions.js"></script>
+            <script src="contact-form.js"></script></title>
+    </head>
+    <body>
+        <form onsubmit="myProcessForm(event)">
+            <label for="phone">PHONE NUMBER:</label>
+            <input required type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <label for="date">DATE:</label>
+            <input required type="datetime-local" id="datetime-local" name="date"><br><br>
+            <label for="name">NAME:</label>
+            <input required type="text" placeholder="your name" id="name"><br><br>
+            <button type="onsubmit">Submit</button>
+        </form>
+        <div id="outputTag"></div>
+        
+
+    </body>        
+</html> 

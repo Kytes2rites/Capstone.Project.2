@@ -9,9 +9,7 @@
       crossorigin="anonymous"
     />
     <script src="utility-functions.js"></script>
-    <script src="contact-form.js"></script>
-    <script src="contact-form.js"></script>
-    <link href="styles.css" rel="stylesheet" />
+    <script src="contact-form.js"></script>    <link href="styles.css" rel="stylesheet" />
   </head>
   <body class="bg bg-dark">
     <header>
@@ -34,18 +32,14 @@
 <h2 class="text-center">We would love to hear from you!</h2>
 
       <p class="text-center">tel: 555-555-5555 OR email 9vS6M@example.com</p><br>
-      <p class="border border-5 border-info bg-black p-2 text-info rounded text-center">BOOK AN APPOINTMENT</p>
+      <p class="border border-5 border-info bg-black p-2 text-info rounded text-center">Schedule an appointment with us!</p>
       <form class="text-center" onsubmit="myProcessForm(event)">
         <label for="name">Name:</label>
-        <input class="text-primary bg-light" required type="text" placeholder="John Doe" id="name"><br><br>
-        <label for="email">Email:</label>
-        <input class="text-primary bg bg-light" required type="text" placeholder="R4kS3@example.com" id="email"><br><br>
+       <input class="text-primary bg-light" required type="text" placeholder="John Doe" id="name"><br><br>
         <label for="phone">Phone:</label>
         <input class="text-primary bg-light" type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
-        <label for="date">Date:</label>
-        <input class="text-secondary bg-light" type="date" id="date" name="date"><br><br>
-        <label for="time">Time:</label>
-        <input class="text-secondary bg-light" type="time" id="time" name="time"><br><br>
+        <label for="datetime-local">Date:</label>
+        <input class="text-secondary bg-light" type="datetime-local" id="date" name="date"><br><br>
         <label for="notes">Message:</label>
         <textarea class="text-primary bg-black" id="notes" name="notes"></textarea><br><br>
         <input class="text-primary bg-black" type="submit" value="Schedule Appointment">
