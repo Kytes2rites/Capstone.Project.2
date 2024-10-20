@@ -1,9 +1,9 @@
 git init
-git config user.name "kytes2rites"
-git config user.email "jilhoff61@outlook.com"
+git config user.name ""
+git config user.email ""
 gh auth login 
-git remote add origin https://github.com/Powersootbrite/jill-multi-page-wabhgfbcfntensjmtgzsazrsettykthk.git
-git remote set-url origin https://github.com/Kytes2rites/Capstone.Project.2.git
+git remote add origin
+git remote set-url origin
 git add .
 git commit -m "first commit"
 git push --set--upstream origin main
