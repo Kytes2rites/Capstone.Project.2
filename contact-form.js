@@ -7,4 +7,3 @@ function myProcessForm(event) {
     const value = input.value;
     output(`Thank you ${value} for your submission!`);
 }
-
