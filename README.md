@@ -1,35 +1,9 @@
-git commit-echo "# jill-multi-page-wabhgfbcfntensjmtgzsazrsettykthk" >> README.md
 git init
-git add README.md
-git config user.name "powersootbrite"
-git config user.email "sootpower3@gmail.com"
-
-git commit -m "first commit"
-git branch -M main
+git config user.name "kytes2rites"
+git config user.email "jilhoff61@outlook.com"
+gh auth login 
 git remote add origin https://github.com/Powersootbrite/jill-multi-page-wabhgfbcfntensjmtgzsazrsettykthk.git
-curl -sS https://webi.sh/gh | sh
-gh auth login
-git push -u origin main
-
-
-//create a save point and attach memo to it
-git commit -m
-
-//view the value of origin
-git remote -v
-
-//CHANGE THE VALUE OF ORIGIN
-git remote set-url origin https://github.com/Powersootbrite/jill-multi-page-wabhgfbcfntensjmtgzsazrsettykthk.git
-
-//gitACTIUVATE OR INTIALIZE SOURCE CONTROL
-git init
-
-//RENAMES CURRENT BRANCH TO MAIN
-git branch -M main
-
+git remote set-url origin https://github.com/Kytes2rites/Capstone.Project.2.git
 git add .
-git commit -m
-git push
-
-//PUSHES CHANGES TO THE ORIGINS MAIN BRANCH AND SAVES PARAMETERSgiy
-git push -u origin main
+git commit -m "first commit"
+git push --set--upstream origin main

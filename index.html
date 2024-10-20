@@ -9,6 +9,8 @@
       crossorigin="anonymous"
     />
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
     <style>
       body {
         background-color: #000d1a;
@@ -66,7 +68,7 @@
             <div class="card">
               <img
                 class="card-img-top"
-                src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/parking-multi-storey-car-park.jpg?v=1726056546171"
+                src="CapstonePictures\11.jpg" usemap="#image-map"
               />
               <div class="card-body">
                 <a href="cat.html"
@@ -198,10 +200,17 @@
       
       <h3>Meet Our Newest Team Member</h3>
       <p>
-        Join us in welcoming Keroppi, our new parking guru! He is ready to take parking to the next level.
+        Join us in welcoming Keroppi, our new parking guru! He is ready to take parking to the next level. Click his foot to see if you qualify for a spot!
       </p>
       <img
-        src="https://cdn.glitch.global/f5a336da-c7a4-443f-8539-b17e25543383/keroppi.jpg?v=1726599457888"
+      usemap="#map" src="CapstonePictures\keroppi.jpg" alt="Keroppi">
+      <map name="map">
+        <area
+        title="Click the foot"
+        coords="158,200, 178,205, 202,220, 183,243, 146,239, 142,215"
+        shape="poly"
+        href="cat.html"
+
       />
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Yes he is a<span class="badge bg-success">FROG</span>
