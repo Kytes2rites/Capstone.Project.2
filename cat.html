@@ -15,113 +15,21 @@
     crossorigin="anonymous"
   ></script>
   </head>
-  <div class="alert alert-primary alert-dismissible">
-    <span class="spinner-grow text-info"></span>
-    Location is on
-    <button class="btn-close" data-bs-dismiss="alert"></button>
+  <div class="alert alert-primary alert-dismissible" role="alert" data-bs-dismiss="alert" style="border: border-dark">
+    <span class="spinner-grow text-dark border border-top border-4 border-primary"></span>
+    <div class="container text-center text-white rounded border-4 border-dark bg-secondary"><p class="border border-black bg-dark">Location is on</p></div>
+    <button class="btn-close bg-info border border-dark" data-bs-dismiss="alert"></button>
   </div>
   
-   <script>
-      function display1(myMessage) {
-    
-    //STEP: Let it display the message.
-    //PSEUDO: Display myMessage
-    document.write(myMessage);
-  }
-
-  
-  
-  
-//STEP: Create command called ask. Let is accept a message.
-  //PSEUDO: Create command called ask with myMessage
-  function ask3(myMessage) {
-    
-    //STEP: Let it prompt the user with that message. Store it in userText.
-    //PSEUDO: userText = prompt(myMessage)
-    userText = prompt(myMessage);
-
-    //STEP: Convert userText to a number. Store in userNumber.
-    //PSEUDO: userNumber = Number(userText)
-    userNumber = Number(userText);
-
-    //STEP: Compare is userNumber equal to NaN. Store it in result.
-    //PSEUDO: isNaN = userNumber === NaN
-    isNotNumber = isNaN(userNumber);
-
-    //STEP: If result is "yes"
-    //PSEUDO: if isNaN
-    if (isNotNumber) {
-      
-      //STEP:  Send out userText.
-      //PSEUDO: return userText
-      return userText;
-
-      //STEP:  Otherwise
-      //PSEUDO: otherwise
-    } else {
-      
-      //STEP: Send out userNumber.
-      //PSEUDO: Return userNumber
-      return userNumber;
-    }
-  }
-  
-
-</script>
-<script>
- myInput = ask3("enter your zip code.");
- 
-    </script>
-      
-      
-    <script> 
-      // debugger
-function runProblem1() {
-    /***********************************************
-    1. Create a loop that keeps going until the use inputs stop.
-    
-    STEPS:
-    1. Start a loop
-    2. Prompt the user for a word.
-    3. Store the response in userText.
-    4. Compare does userText match "stop".
-    5. Store in isDone.
-    6. While not isDone, repeat the loop.
-
-    PSEUDO CODE:
-    Start loop
-      userText = prompt("Enter a word.")
-      isDone = userText === stop
-    while not isDone, repeat
-    
-    **********************************************/
-    
-    //STEP: Start a loop
-    //PSEUDO: Start loop
-    do {
-      
-      //STEP: Prompt the user for a word. Store the response in userText.
-      //PSEUDO: userText = prompt("Enter a word.")
-      userText = prompt("Enter the word 'park'.");
-
-      //STEP: Compare does userText match "stop". Store in isDone.
-      //PSEUDO: isDone = userText === stop
-      isDone = userText === "park";
-
-      //STEP: While not isDone, repeat
-      //PSEUDO: While not isDone, repeat
-    } while (!isDone);
-  }
-
-  runProblem1();
+   
 
 
 </script>  
-  <body>
+  <body class="bg bg-dark">
     <img
       class="border border-5"
       width="100%"
-      height="211"
+      height="210"
       src="https://nmeda.org/wp-content/uploads/2016/10/Accessible-Parking-Spots.jpg"
     />
     <header>
@@ -133,25 +41,34 @@ function runProblem1() {
       </nav>
     </header>
     <main>
-      <h1 class="text-primary">
+      <h2 class="text-center pt-3 text-primary">
+        <p class="border border-5 border-info bg-black p-2 text-info rounded text-center"><h2 class="text-center pt-3 text-primary">
+      <h1 class="text-center text-primary pt-3">
         NO SPOTS AVAILABLE IN YOUR LOCATION
       </h1>
-    <footer style="text-align: center; color: indianred">
-      <form>
-        <p>Rate this spot</p>
-        <input id="1star" type="radio" name="stars" /><label for="1star"
-          >1star</label
-        >
-        <input id="2star" type="radio" name="stars" /><label for="2star"
-          >2star</label
-        >
-        <input id="3star" type="radio" name="stars" /><label for="3star"
-          >3star</label
-        >
-      </form>
-      <br />
-      Websyte Lyte
-    </footer>
     </main>
+    <footer class="pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md- border border-3 border-info">
+            <p class="text-info text-center m-2"><i>"Paradise Parkers is the best place to park your car!"</i></p>
+            <p class="text-info text-center m-2"><i>"We had a great experience with Paradise Parkers!"</i></p>
+            <p class="text-info text-center m-2"><i>"I highly recommend Paradise Parkers to anyone looking for parking!"</i></p>
+          </div>
+            <h4 class="text-secondary border-top border-black border-4 pt-2">Quick Links</h4>
+            <div class="list-group"><img 
+              height="250px"
+              src="CapstonePictures\3.jpg">
+              <div><a href="index.html">Home</a></li>
+              <div><a href="about.html">About</a></li>
+              <div><a href="contact.html">Contact</a></li>
+            </div>
+          </div>
+          
+            <p mt-3>&copy; 2023 Paradise Parkers All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+  </footer>
   </body>
 </html>
