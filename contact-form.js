@@ -7,5 +7,5 @@ function myProcessForm(event) {
     const date = dateinput.value;
     const phone = phoneinput.value;
     const name = nameinput.value;
-    output(` Thank you ${date}@${phone} . Your appointment is scheduled on ${name}!`);
+    output(` Thank you ${date} @ ${phone} . Your appointment is scheduled on ${name}!`);
 }

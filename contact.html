@@ -27,30 +27,32 @@
         <a class="nav-link" href="about.html">About Us</a>
       </nav>
     </header>
-    <main">
+    <main>
       
 <h2 class="text-center pt-3 text-primary">
       <p class="border border-5 border-info bg-black p-2 text-info rounded text-center"><h2 class="text-center pt-3 text-primary">
         We would love to hear from you!</h2></p>
+        <p></p>
 
-        <p class="text-center">tel: 555-555-5555 OR email 9vS6M@example.com</p><br></p>
+        <div class="text-center">tel: 555-555-5555 OR email 9vS6M@example.com</div><br></p>
       <form class="border border-3 border-secondary text-center" onsubmit="myProcessForm(event)">
         <label for="name">Name:</label>
-       <input class="text-primary bg-light" required type="text" placeholder="John Doe" id="name"><br><br>
+       <input class="text-primary" required type="text" placeholder="John Doe" id="name"><br><br>
         <label for="phone">Phone:</label>
-        <input class="text-primary bg-light" type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <input class="text-primary" required type="tel" placeholder="123-456-7890" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
         <label for="datetime-local">Date:</label>
-        <input class="text-secondary bg-light" type="datetime-local" id="date" name="date"><br><br>
+        <input class="text-secondary" required type="date" id="date" name="date"><br><br>
+        <label for="time">Time:</label>
+        <input class="text-secondary" id="time" type="time"><br><br>
         <label for="notes">Message:</label>
-        <textarea class="text-primary bg-black" id="notes" name="notes"></textarea><br><br>
-        <input class="text-primary bg-black" type="submit" value="Schedule Appointment">
+        <textarea class="text-primary" id="notes" name="notes"></textarea><br><br>
+        <button type="onsubmit">Submit</button>
       </form>
       <div id="outputTag"></div>
 
     </main>
       <footer class="pt-4">
         <div class="container rounded border border-2 border-black">
-          <div class="row">
             <div class="col-md- border border-3 border-info">
               <p class="text-center m-2"><i>"Paradise Parkers is the best place to park your car!"</i></p>
               <p class="text-center m-2"><i>"We had a great experience with Paradise Parkers!"</i></p>
@@ -64,7 +66,7 @@
               </div>
             </div>
             
-              <p mt-3>&copy; 2023 Paradise Parkers All rights reserved.</p>
+              <section mt-3>&copy; 2023 Paradise Parkers All rights reserved.</section>
             </div>
           </div>
         </div>
