@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "merry";
+  src: url(MerrysPersonalUse-KVM77.ttf);
+}
+
+@font-face {
+  font-family: "CERD";
+  src: url("ChavlerExtruderightDemo-lxM9d.otf");
+}
+
+@font-face {
+  font-family: "CERD1";
+  src: url(CeniosroundedExtruderightDemo-drvpR.otf);
+}
+
+button {
+  font-family: CERD1;
+  padding: 0px 0px 0px 29px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgb(2, 0, 5), hsl(202, 73%, 3%), rgb(230, 3, 86));
+  color: rgba(57, 180, 252, 0.888);
+  font-size: 25px;
+  border: 5px solid rgba(83, 241, 214, 0.826);
+}
+
+body {
+  margin: 21px;
+}
+
+button:hover {
+  color: rgb(245, 248, 37);
+}
+
+h2 {
+  text-align: end;
+  font-size: 45px;
+}
+
+header {
+  margin: 12px;
+  border-bottom: 10px solid rgb(37, 33, 33);
+  border-right: 8px solid black;
+  border-top: 5px solid rgb(193, 163, 130);
+  border-left: 7px solid rgb(23, 22, 22);
+  background-color: rgba(103, 79, 99, 0.822);
+}
+
+main {
+  font-family: CERD;
+}
+
+main {
+  background-image: url(images\4 .jpg);
+  border: 3px solid rgb(245, 31, 84);
+  padding: 2px 0px 1px 0px;
+  margin: -1px 20px 3px 17px;
+  opacity: 90%;
+}
+
+span {
+  border: 5px solid rgba(83, 241, 214, 0.826);
+  padding: plump;
+  background-color: rgb(75, 79, 219);
+}
+
+.banner {
+  padding: 0px 0px 0px 29px;
+  background-color: rgb(19, 21, 27);
+  border-radius: 5px;
+}
+
+.bigger {
+  font-size: 25px;
+}
+
+.brain {
+  font-family: merry;
+  font-size: 25px;
+  background-color: rgb(80, 36, 36);
+  border-top: 3px solid rgba(77, 251, 235, 0.76);
+  border-radius: 5px;
+  padding: 2px 0px 0px 0px;
+  margin: 1px 3px 0px 0px;
+}
+
+.butt {
+  border: 3px solid rgb(245, 31, 84);
+  padding: 25px 26px 27px 50px;
+  font-size: 40px;
+}
+
+.heading {
+  font-family: merry;
+  color: rgba(255, 255, 255, 0.647);
+  margin: 1px 0px -7px 0px;
+}
+
+.heading-three {
+  font-family: CERD1;
+  color: rgba(186, 189, 237, 0.93);
+  margin: -5px 0px 0px 7px;
+  font-size: 35px;
+  padding: 22px;
+  display: inline;
+}
+
+.inline {
+  display: inline;
+  margin: -146px 1px 4px 0px;
+  opacity: 29%;
+  background-image: url(4.jpg);
+  background-repeat: repeat-y;
+}
+
+.padding {
+  padding-right: 10px 11px 13px 14px;
+  margin: -24px 20px 0px 0px;
+}
+
+.pullup {
+  margin: 1px 2px 30px 40px;
+  padding: 12px 15px 0px 34px;
+}
+
+.opacity {
+  opacity: 0%;
+  margin: -180px 17px -58px 9px;
+  padding: 40px 20px 7px 14px;
+  color: whitesmoke;
+}
