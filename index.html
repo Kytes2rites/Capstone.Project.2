@@ -16,38 +16,54 @@
     crossorigin="anonymous"
   ></script>
     <style>
-      body {
-        background-color: #000d1a;
+      .top-card {
+        background-image: linear-gradient(rgb(35, 144, 154), black 12%);
+        margin-bottom: 100px;
+        padding: 15px 20px 33px;
+        border: 4px solid greenyellow
       }
-      h1
-       {
-        background-color: #000d1a;
+      .center {
+        border-radius: 12px;
+        text-align: center;
+        padding-top: 1%;
+        margin: 2px;
+        
       }
+      .inline {
+        display: inline;
+      
+      }
+      .padding {
+        border: 5px solid rgb(48, 11, 11);
+        background-image: linear-gradient(rgb(219, 27, 142), black );
+        color: rgb(223, 250, 223);
+        text-align: center;
+        font-size: 22px;
+        padding: 4px 5px 6px;
+
+      }
+      .banner-one {
+        font-size: 79px;
+        color:rgb(108, 223, 233)
+      }
+
     </style>
   </head>
   <body>
     <header>
-      <img
-        class="border border-5"
-        width="100%"
-        height="211"
-        alt="parkinglot"
-        src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/SEC0216-parking-feature-slide5_900px.jpg?v=1726056485855"
-      />
-      <nav class="nav nav-pills nav justify-content-end bg bg-white">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="nav-link" href="about.html">About Us</a>
-      </nav>
-    </header>
+      <div class="banner banner-one">PARADISE PARKING
+    </div>
+    <nav>
+        <a class="borderRadius "href="home.html">Home</a>
+        <a class="borderRadius"href="about.html">About</a>
+        <a class="borderRadius"href="gallery.html">Gallery</a>
+        <a class="borderRadius"href="contact.html">Contact Us</a>
+    </nav>
     <main>
-      <h2 class="text-center pt-3 text-primary">
-        <p class="border border-5 border-success bg-black p-2 text-info rounded text-center"><h2 class="text-center pt-3 text-primary">
-      <h1 class="text-center p-3" style="color: #8bf5c9">Paradise Parkers</h1>
-      <pre>                      This could be your spot in paradise!               Compact Spots      Deluxe Spots       Luxury Spots        Paradise is waiting..      Reserve your spot today!</pre>
-      <div class="container">
-        <div class="row">
+        <div class="row top-card">
+          <h1 class="center">Paradise Parkers</h1>
+          <h3 class="inline">Take the hassle out of parking</h3>
+          <h3 class="inline">Newly paved and painted parking lots!</h3>
           <div class="col">
             <div class="card">
               <img
@@ -63,7 +79,7 @@
                     >CLICK FOR YOUR SPOT</span
                   >
                 </a>
-                <h3 class="card-title border-dotted border-3 border-secondary text-center p-1" style="color:#FFE4E1">24-HOUR SECURITY LONG-TERM</h3>
+                <h3 class="card-title border-dotted border-3 border-secondary text-center p-1" style="color:#FFE4E1">24-HOUR SECURITY</h3>
                 Our lots have a guard on duty along with the
               </div>
             </div>
@@ -108,7 +124,7 @@
                     >CLICK FOR YOUR SPOT</span
                   >
                 </a>
-                <p class="text-center container card-title border border-dotted p-2" style="background-color: rgb(75, 100, 92); color:rgb(236, 213, 217)">INDOOR and OUTDOOR</p>
+                <p class="padding">INDOOR and OUTDOOR</p>
                 <p style="color:rgb(147, 134, 69)">Climate controlled parking. The best parking spots in town!</p>
               </div>
             </div>
@@ -185,24 +201,26 @@
         <h4 class="container text-center bg-dark border-3 border-bottom border-primary text-success">What our customers say:</h4>
         <div class="container bg-dark">
           <div class="row">
-            <div class="col bg-black">
+            <div class="col bg-info border border-primary rounded m-2 ">
               <p class="text-center m-2 text-success"><i>"Paradise Parkers exceeded our expectations"</i></p>
               <p class="text-center m-2 text-success"><i>"Pardise Parkers is the best"</i></p>
               <p class="text-center m-2 text-success"><i>"We love Paradise Parkers"</i></p>
             </div>
-            
-             
           </div>
         </div>
-    </footer>
-      <br />
-      <h4 class="pb-2 border-top border-3 border-info">Sitemap</h4>
-      <nav class="bg-black">
-        <a href="#Short-term">Short-term</a><br />
-        <a href="#Long-term">Long-term</a><br />
-        <a href="#DIY">DIY</a><br />
-      </nav>
+        <footer>
+          <nav class="parent">
+              <a class="contact "href="home.html">Home</a>
+              <a class="contact" href="about.html">About</a>
+              <a class="contact" href="gallery.html">Gallery</a>
+              <a class="contact" href="contact.html">Contact Us</a>
+          </nav>
+          
+      </footer>
+    <div class="text-center text-white bg-dark border-3 border-bottom border-info">
       <p mt-3>&copy; 2023 Paradise Parkers All rights reserved.</p>
     </div>
+  </div>
+  </footer>
   </body>
 </html>
