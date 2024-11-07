@@ -1,134 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Paradise Parking</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+    
+    <title>Paradise Parkers</title>
+    
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link href="styles.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-    <style>
-      .top-card {
-        background-image: linear-gradient(rgb(35, 144, 154), black 12%);
-        margin-bottom: 100px;
-        padding: 15px 20px 33px;
-        border: 4px solid greenyellow
-      }
-      .center {
-        border-radius: 12px;
-        text-align: center;
-        padding-top: 1%;
-        margin: 2px;
-        
-      }
-      .inline {
-        display: inline;
-      
-      }
-      .padding {
-        border: 5px solid rgb(48, 11, 11);
-        background-image: linear-gradient(rgb(219, 27, 142), black );
-        color: rgb(223, 250, 223);
-        text-align: center;
-        font-size: 22px;
-        padding: 4px 5px 6px;
+      crossorigin="anonymous">
 
-      }
-      .banner-one {
-        font-size: 79px;
-        color:rgb(108, 223, 233)
-      }
-
-    </style>
+    <link rel="stylesheet" href="sass.css" />
+  
   </head>
+  
   <body>
-    <header>
-      <div class="banner banner-one">PARADISE PARKING
-    </div>
-    <nav>
-        <a class="borderRadius "href="home.html">Home</a>
-        <a class="borderRadius"href="about.html">About</a>
-        <a class="borderRadius"href="gallery.html">Gallery</a>
-        <a class="borderRadius"href="contact.html">Contact Us</a>
-    </nav>
+    
+    <header class="pullUp">
+      <div class="brain pullUp">
+        <h2">Paradise Parkers</h2>
+      </div>
+
+      <img class="border borderRadius" width="100%" src="header1_cr3.png" />
+      <nav class="nav nav-fill">
+        <a class="borderRadius nav-link" href="index.html">Home</a>
+        <a class="borderRadius nav-link" href="gallery.html">Gallery</a>
+        <a class="borderRadius nav-link" href="contact.html">Contact</a>
+        <a class="borderRadius nav-link" href="about.html">About</a>        
+      </nav>
+    </header>
     <main>
-        <div class="row top-card">
-          <h1 class="center">Paradise Parkers</h1>
-          <h3 class="inline">Take the hassle out of parking</h3>
-          <h3 class="inline">Newly paved and painted parking lots!</h3>
-          <div class="col">
-            <div class="card">
-              <img
-                alt="parkinglotnite"
-                class="card-img-top"
-                src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/4327615.jpg?v=1726056408372"
-              />
-              <div class="card-body">
-                <a href="cat.html"
-                  ><span
-                    class="btn btn-sm border-black border-4 bg-dark"
-                    style="color: #ca8bf5"
-                    >CLICK FOR YOUR SPOT</span
-                  >
-                </a>
-                <h3 class="card-title border-dotted border-3 border-secondary text-center p-1" style="color:#FFE4E1">24-HOUR SECURITY</h3>
-                Our lots have a guard on duty along with the
-              </div>
+      <h1>The Best Place Space!</h1>
+      <h2></h2>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img alt="ParkingLotNite" class="card-img-top" src="Images\card1.png"/>
+              <a href="cat.html"><span>CLICK FOR YOUR SPOT</span></a>
+              <h3 class="card-title">24-HOUR SECURITY LONG-TERM</h3>
+              Our lots have a guard on duty along with their security
             </div>
           </div>
-          <div class="col">
-            <div class="card border border-3 border-dashed border-dark">
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
               <img
+                alt="ParkingGarage"
                 class="card-img-top"
-                src="CapstonePictures\11.jpg" usemap="#image-map"
+                src="Images\card2.png"
               />
-              <div class="card-body">
-                <a href="cat.html"
-                  ><span
-                    class="btn btn-sm border-black border-5 bg-dark"
-                    style="color: #ca8bf5"
-                    >CLICK FOR YOUR SPOT</span
-                  >
-                </a>
-                <h3 class="card-title border-3 border-dashed border-secondary text-center p-1" style="color:#FFE4E1">VALET and VIP PARKING</h3>
-                <p style="color:rgb(147, 134, 69)">Our Valet Team has 15 years of parking experience. Vip has
-                Economy Plus parking and Residency Rates.</p>
-              </div>
-            </div>
-            <div class="container border-4 border-dashed">
-              <div class="row">
-                <div class="col" style="color: #dbdeb6">
-                </div>
-              </div>
+              <a href="cat.html"><span><button>ClICK HERE</button></span></a
+              >
+              <h3 class="card-title">VALET and VIP PARKING</h3>
+              <p>
+                Our Valet Team has 15 years of parking experience. Vip has
+                Economy Plus parking and Residency Rates.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card border border-3 border-dashed border-dark">
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
               <img
+                alt="FootballParking"
                 class="card-img-top"
-                src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/th.jpg?v=1726056502745"
+                src="Images\card3.jpg"
               />
-              <div class="card-body">
-                <a href="cat.html"
-                  ><span
-                    class="btn btn-sm border-black border-5 bg-dark"
-                    style="color: #ca8bf5"
-                    >CLICK FOR YOUR SPOT</span
-                  >
-                </a>
-                <p class="padding">INDOOR and OUTDOOR</p>
-                <p style="color:rgb(147, 134, 69)">Climate controlled parking. The best parking spots in town!</p>
-              </div>
+              <a href="cat.html"><span class="button">ClICK HERE</span></a>
+              <h3>INDOOR and OUTDOOR</h3>
+              <p class="cardDesc">
+                Climate controlled parking. The best parking spots in town!
+              </p>
             </div>
-          </div><pre><p class="container text-light bg bg-dark fs-6 text-center">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <p class="container text-light bg bg-dark fs-6 text-center">
             The Paradise Parkers family welcomes its latest addition: Manual
             ParkN—a D.I.Y. parking lot. With economy-sized spaces and vending
             machines throughout, we’re proud to offer this convenient solution.
@@ -142,8 +96,7 @@
             Parkers has the first ever green climate control individual parking
             slots. These long-term spaces are ideal for business travelers and
             jet setters alike. We send you up to the minute information on your
-            car with our Space SAFE security systems!
-          </p>
+            car with our Space SAFE security systems</p>
           </pre>
           <h3 class="text-center fw-bold">PARKING FOR ALL SHAPES AND SIZES</h3>
           <ul class="list-group list-group-flush text-center">
