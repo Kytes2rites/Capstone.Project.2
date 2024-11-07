@@ -1,3 +1,33 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "accessibility.signals.save": {
+        "sound": "userGesture",
+        "announcement": "always"
+    },
+    "explorer.fileNesting.patterns": {
+        "package.json": "",
+        "*.tsx": "",
+        "tsconfig.json": "",
+        "*.jsx": "",
+        "*.js": "",
+        "*.ts": ""
+    },
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false,
+        "**/node_modules": false
+    },
+    "search.useIgnoreFiles": false,
+    "scm.alwaysShowActions": true,
+    "scm.providerCountBadge": "visible",
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
+    "notebook.codeActionsOnSave": {
+
+    },
+    "less.format.spaceAroundSelectorSeparator": true,
+    "less.lint.compatibleVendorPrefixes": "warning",
+    "npm.exclude": "",
+    "debugpy.showPythonInlineValues": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "liveSassCompile.settings.autoprefix": []
 }
