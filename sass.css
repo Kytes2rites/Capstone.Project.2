@@ -11,7 +11,7 @@
   src: url("Fonts/CeniosroundedExtruderightDemo-drvpR.otf");
 }
 .box-shadow {
-  box-shadow: 50px 50px rgb(6, 7, 6);
+  box-shadow: 50px 35px rgba(35, 53, 35, 0.363);
 }
 
 #mixin-button {
@@ -25,19 +25,46 @@
 }
 
 #mixin-example {
-  box-shadow: 50px 50px rgb(6, 7, 6);
-  text-shadow: 3px 3px rgb(67, 67, 67);
+  box-shadow: 50px 35px rgba(35, 53, 35, 0.363);
+  text-shadow: 4px 3px rgb(255, 112, 46);
+}
+
+#main {
+  background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
+  border: solid 3px rgb(31, 245, 127);
+  padding: 2px 0px 1px 0px;
+  margin: -1px 20px 3px 17px;
+  opacity: 90%;
+}
+
+#header {
+  background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333);
+  margin: 7px;
+  border-bottom: 2px solid #666;
+  border-right: 4px solid #444;
+  border-top: 3px solid #555;
+  border-left: 5px solid rgba(219, 126, 126, 0.5);
+  background-color: rgba(90, 70, 100, 0.722);
+}
+
+------------------------------------------------------------------ .brain2 {
+  background-color: #7cffc8;
+  border-top: 3px solid rgba(77, 251, 235, 0.76);
+  border-left: 11px solid rgba(77, 251, 235, 0.76);
+  border-radius: 5px;
+  padding: 2px 0px 0px 0px;
+  margin: 1px 3px 0px 0px;
+  background-image: url(1000012461_Glitch23.jpg);
 }
 
 .card {
-  border: 3px solid rgb(245, 31, 84);
+  border: 5px solid rgba(83, 241, 214, 0.826);
   border-radius: 5px;
-  background-color: rgb(62, 127, 135);
-  margin: 1;
+  background-color: rgb(131, 15, 226);
+  margin: 12px 12px 12px 12px;
   font-size: 35px;
   font-family: CERD1;
   color: rgba(255, 255, 255, 0.647);
-  background-image: url(Images\3 .jpg);
 }
 
 html {
@@ -66,27 +93,22 @@ button:hover {
 }
 
 nav {
-  font-family: CERD1;
-  border: 3px solid #e0ff71;
+  font-family: CERD;
+  border: 4px solid rgb(28, 46, 28);
   text-align: center;
   color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 }
 
 nav a {
-  border: 4px solid rgb(28, 46, 28);
+  border: 2px solid #666;
   color: rgba(255, 255, 255, 0.647) !important;
   text-align: center;
-  padding: 14px 20px;
+  padding: 10px 15px;
   text-decoration: none;
   background-image: url(header1_cr3.png);
-  font-size: 100px;
-  border: 4px solid #5dff3c;
+  font-size: 18px;
   margin: 1px;
-  background-image: linear-gradient(linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209)));
-}
-
-nav a B {
-  max-width: 100px;
+  background-image: linear-gradient(linear-gradient(rgb(165, 31, 31), rgb(8, 253, 245), teal));
 }
 
 nav a:hover {
@@ -105,28 +127,10 @@ h2 {
   color: rgba(57, 180, 252, 0.888);
 }
 
-header {
-  background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), black);
-  margin: 7px;
-  border-bottom: 3px solid rgb(226, 13, 125);
-  border-right: 8px solid black;
-  border-top: 5px solid rgb(193, 163, 130);
-  border-left: 7px solid rgba(219, 126, 126, 0.77);
-  background-color: rgba(90, 70, 100, 0.722);
-}
-
 main {
-  background-image: linear-gradient(black, blue, rgba(255, 255, 255, 0.647));
+  background-image: linear-gradient(rgb(116, 255, 213), blue, rgba(255, 255, 255, 0.647));
   border: solid 3px rgb(135, 245, 31);
   font-family: CERD1;
-}
-
-main {
-  background-image: linear-gradient(rgba(30, 39, 33, 0.623), rgb(238, 199, 144));
-  border: solid 3px rgb(31, 245, 127);
-  padding: 2px 0px 1px 0px;
-  margin: -1px 20px 3px 17px;
-  opacity: 90%;
 }
 
 p.cardDesc1 {
@@ -138,6 +142,14 @@ span {
   border: 5px solid rgba(83, 241, 214, 0.826);
   padding: plump;
   background-color: rgb(75, 79, 219);
+}
+
+.list-group-item-one {
+  border: 5px solid rgba(83, 241, 214, 0.826);
+  border-radius: 5px;
+  background-color: rgba(57, 180, 252, 0.888);
+  font-size: 25px;
+  font-family: CERD1;
 }
 
 .banner {
@@ -156,7 +168,7 @@ span {
 .borderRadius {
   border-radius: 12px;
   border: 4px solid rgb(27, 26, 26);
-  background-image: linear-gradient(rgba(33, 121, 128, 0.623), rgb(24, 13, 75));
+  background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
 }
 
 .brain {
@@ -186,6 +198,16 @@ span {
 
 .divRight {
   display: inline;
+}
+
+header {
+  background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333);
+  margin: 7px;
+  border-bottom: 2px solid #666;
+  border-right: 4px solid #444;
+  border-top: 3px solid #555;
+  border-left: 5px solid rgba(219, 126, 126, 0.5);
+  background-color: rgba(90, 70, 100, 0.722);
 }
 
 .heading {

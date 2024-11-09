@@ -29,5 +29,7 @@
     "npm.exclude": "",
     "debugpy.showPythonInlineValues": true,
     "javascript.format.insertSpaceAfterConstructor": true,
-    "liveSassCompile.settings.autoprefix": []
+    "liveSassCompile.settings.autoprefix": [
+        
+    ]
 }

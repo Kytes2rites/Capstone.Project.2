@@ -14,13 +14,17 @@ $border-2: 3px solid rgb(245, 31, 84);
 $plump: 25px 26px 27px 50px;
 $bigger-font: 40px;
 $fontDeluxe: 35px;
-$innerBanner: linear-gradient(black, rgb(8, 253, 245), teal);
+$innerBanner: linear-gradient(rgb(165, 31, 31), rgb(8, 253, 245), teal);
 $gradient-color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 $background-color: #00a8f2;
 $html-border: 3px solid blue;
 $nav-border: 3px solid #e0ff71;
 $body-color:  linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
 $body-color2: solid 3px rgba(110, 121, 108, 0.616);
+$color: rgb(245, 248, 37);
+$nav-border: 4px solid rgb(28, 46, 28);
+$box-shadow: 50px 35px rgba(35, 53, 35, 0.363);
+$text-shadow: 4px 3px rgb(255, 112, 46);
 //  ------------------------------------------------------------    FONTS    ---------------------------------------------------------
 
 @font-face {
@@ -39,9 +43,49 @@ $body-color2: solid 3px rgba(110, 121, 108, 0.616);
 }
 
 
+@mixin main-styles {
+    background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
+    border: solid 3px rgb(31, 245, 127);
+    padding: 2px 0px 1px 0px;
+    margin: -1px 20px 3px 17px;
+    opacity: 90%;
+}
 
 
-// -------------------------------------------------------------    ELEMENT SELECTORS    ---------------------------------------------
+@mixin header-styles {
+  background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333); // darker gradient
+  margin: 7px;
+  border-bottom: 2px solid #666; // thinner border
+  border-right: 4px solid #444; // thinner border
+  border-top: 3px solid #555; // thinner border
+  border-left: 5px solid rgba(219, 126, 126, 0.5); // softer border
+  background-color: rgba(90, 70, 100, 0.722);
+}
+
+@mixin brain-styles {
+    background-color: #7cffc8;
+    border-top: 3px solid rgb(77 251 235 / 76%);
+    border-left: 3px solid rgb(77 251 235 / 76%);
+    border-radius: $rad;
+    padding: 2px 0px 0px 0px;
+    margin: 1px 3px 0px 0px;
+    background-image: url(Images/header1_cr3.png);
+    }
+    
+
+@mixin nav-link {
+    border: 2px solid #666; // thinner border
+    color: $whiteSpot !important;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-image: url(header1_cr3.png);
+    font-size: 18px;
+    margin: 1px;
+    background-image: linear-gradient($innerBanner);
+  }
+
+
 @mixin banner {
     padding: $cushion;
     background-color: rgb(19, 21, 27);
@@ -51,48 +95,77 @@ $body-color2: solid 3px rgba(110, 121, 108, 0.616);
     background-image: $innerBanner;
 }
 
+
 @mixin boxShadow {
-    box-shadow: 50px 50px rgb(6, 7, 6);
+    box-shadow: $box-shadow;
 }
 
+
 @mixin textShadow {
-    text-shadow: 3px 3px rgb(67, 67, 67);
+    text-shadow: $text-shadow;
 }
+
+
 @mixin animation1 {
     transform: scale(1) rotate(0deg);
     transition: transform 1s;
 }
 
+
 @mixin animation2 {
     transform: scale(2) rotate(15deg);
     transition: transform 2s;
 }
-// -------------------------------------------------------------    ID SELECTORS    ----------------------------------------------- 
+
+
+// -------------------------------------------------------------       ----------------------------------------------- 
 .box-shadow {
     @include boxShadow;
 }
+
+
 #mixin-button {
     @include animation1;
         
-    }
+}
+
 
 #mixin-button:hover {
     @include animation2;
 }
 
+
 #mixin-example {
     @include boxShadow;
     @include textShadow;    
 }
+
+#main {
+    @include main-styles;
+  }
+
+#header {
+    @include header-styles;
+  }
+------------------------------------------------------------------
+.brain2 {
+        background-color: #7cffc8;
+        border-top: 3px solid rgb(77 251 235 / 76%);
+        border-left: 11px solid rgb(77 251 235 / 76%);
+        border-radius: $rad;
+        padding: 2px 0px 0px 0px;
+        margin: 1px 3px 0px 0px;
+        background-image: url(1000012461_Glitch23.jpg);
+    }
+
 .card {
-    border: $border-2;
+    border: $border-one;
     border-radius: $rad;
-    background-color: $propColor;
-    margin: 1;
+    background-color: rgb(131, 15, 226);
+    margin: 12px 12px 12px 12px;
     font-size: $fontDeluxe;
     font-family: $secondaryFont;
     color: $whiteSpot;
-    background-image: url(Images\3.jpg);
 }
     
 
@@ -120,12 +193,15 @@ button {
     border: $border-one;
 
     &:hover {
-        color: rgb(245, 248, 37);
+        color: $color;
     }
 }
 
+
+
+
 nav {
-    font-family: $secondaryFont;
+    font-family: $primaryFont;
     border: $nav-border;
     text-align: center;
     color: $gradient-color;
@@ -133,23 +209,12 @@ nav {
 }
 
 nav a {
-    $coolColor: rgb(121, 8, 8);
-    $dropColor: rgba(57, 180, 252, 0.888);
-    border: 4px solid rgb(28, 46, 28);
-    color: $whiteSpot !important;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    background-image: url(header1_cr3.png);
-    font-size: 100px;
-    border: 4px solid #5dff3c;
-    margin: 1px;
-    background-image: linear-gradient($gradient-color);
+    @include nav-link;  
 }
 
-nav a B {
-    max-width: 100px;
-}
+// nav a B {
+//     max-width: 100px;
+// }
 
 nav a:hover {
     background-image: url(4.jpg);
@@ -168,30 +233,14 @@ h2 {
     color: $dropColor;
 }
 
-header {
-    background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), black);
-    margin: 7px;
-
-    border-bottom: 3px solid rgb(226, 13, 125, 1);
-    border-right: 8px solid black;
-    border-top: 5px solid rgb(193, 163, 130);
-    border-left: 7px solid rgb(219, 126, 126, 0.77);
-    background-color: rgba(90, 70, 100, 0.722);
-}
+// header {
+//     @include header-styles;
+//   }
 
 main {
-    background-image: linear-gradient(black, blue, $whiteSpot);
+    background-image: linear-gradient(rgb(116, 255, 213), blue, $whiteSpot);
     border: solid 3px rgb(135, 245, 31);
     font-family: $secondaryFont;
-}
-
-main {
-    background-image: linear-gradient(rgba(30, 39, 33, 0.623), rgb(238, 199, 144));
-    border: solid 3px rgb(31, 245, 127);
-    padding: 2px 0px 1px 0px;
-    margin: -1px 20px 3px 17px;
-    opacity: 90%;
-
 }
 
 p {
@@ -210,7 +259,13 @@ span {
 
 
 // -------------------------------------------------------------    CLASS SELECTORS    -----------------------------------------------
-
+ .list-group-item-one {
+    border: $border-one;
+    border-radius: $rad;
+    background-color: $dropColor;
+    font-size: $fs;
+    font-family: $secondaryFont;
+ }
 .banner {
     padding: $cushion;
     background-color: rgb(19, 21, 27);
@@ -227,17 +282,12 @@ span {
 .borderRadius {
     border-radius: 12px;
     border: 4px solid rgb(27, 26, 26);
-    background-image: linear-gradient(rgba(33, 121, 128, 0.623), rgb(24, 13, 75));
+    background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
 }
 
 .brain {
-    background-color: #7cffc8;
-    border-top: 3px solid rgb(77 251 235 / 76%);
-    border-left: 3px solid rgb(77 251 235 / 76%);
-    border-radius: $rad;
-    padding: 2px 0px 0px 0px;
-    margin: 1px 3px 0px 0px;
-    background-image: url(Images/header1_cr3.png);
+    @include brain-styles;
+
 }
 
 .butt {
@@ -258,6 +308,10 @@ span {
 .divRight {
     display: inline;
 }
+
+header {
+    @include header-styles;
+  }
 
 .heading {
     font-family: $moreFont;
