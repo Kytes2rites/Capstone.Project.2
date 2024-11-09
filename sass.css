@@ -29,8 +29,7 @@
   text-shadow: 4px 3px rgb(255, 112, 46);
 }
 
-#main {
-  background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
+main {
   border: solid 3px rgb(31, 245, 127);
   padding: 2px 0px 1px 0px;
   margin: -1px 20px 3px 17px;
@@ -53,18 +52,26 @@
   border-left: 11px solid rgba(77, 251, 235, 0.76);
   border-radius: 5px;
   padding: 2px 0px 0px 0px;
-  margin: 1px 3px 0px 0px;
+  margin: -11px 3px 0px 0px;
   background-image: url(1000012461_Glitch23.jpg);
 }
 
 .card {
-  border: 5px solid rgba(83, 241, 214, 0.826);
+  border: blue;
   border-radius: 5px;
   background-color: rgb(131, 15, 226);
   margin: 12px 12px 12px 12px;
   font-size: 35px;
   font-family: CERD1;
   color: rgba(255, 255, 255, 0.647);
+}
+
+.card2 {
+  background-color: rgba(255, 0, 0, 0.219);
+}
+
+.border-border {
+  background-color: rgba(31, 231, 31, 0.363);
 }
 
 html {
@@ -75,7 +82,7 @@ html {
 body {
   background-image: linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
   border: solid 3px rgba(110, 121, 108, 0.616);
-  color: rgba(255, 255, 255, 0.647);
+  color: rgb(245, 248, 37);
   font-family: CERD;
   font-size: 25px;
 }
@@ -123,14 +130,14 @@ nav a:hover {
 h2 {
   background-image: url(CapstonePictures\3 .png);
   text-align: end;
-  font-size: 45px;
+  font-size: 25px;
   color: rgba(57, 180, 252, 0.888);
 }
 
 main {
   background-image: linear-gradient(rgb(116, 255, 213), blue, rgba(255, 255, 255, 0.647));
   border: solid 3px rgb(135, 245, 31);
-  font-family: CERD1;
+  font-family: merry;
 }
 
 p.cardDesc1 {
@@ -169,6 +176,7 @@ span {
   border-radius: 12px;
   border: 4px solid rgb(27, 26, 26);
   background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
+  color: #00a8f2;
 }
 
 .brain {
@@ -179,6 +187,11 @@ span {
   padding: 2px 0px 0px 0px;
   margin: 1px 3px 0px 0px;
   background-image: url(Images/header1_cr3.png);
+}
+
+.bg-info {
+  -bs-bg-opacity: 12;
+  background-color: rgb(255, 144, 144) !important;
 }
 
 .butt {
@@ -234,7 +247,7 @@ header {
 }
 
 .opacity {
-  opacity: 0%;
+  opacity: 90%;
   margin: -180px 17px -58px 9px;
   padding: 40px 20px 7px 14px;
   color: whitesmoke;

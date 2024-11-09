@@ -44,7 +44,7 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 
 @mixin main-styles {
-    background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
+    // background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
     border: solid 3px rgb(31, 245, 127);
     padding: 2px 0px 1px 0px;
     margin: -1px 20px 3px 17px;
@@ -140,7 +140,7 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
     @include textShadow;    
 }
 
-#main {
+main {
     @include main-styles;
   }
 
@@ -154,12 +154,12 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
         border-left: 11px solid rgb(77 251 235 / 76%);
         border-radius: $rad;
         padding: 2px 0px 0px 0px;
-        margin: 1px 3px 0px 0px;
+        margin: -11px 3px 0px 0px;
         background-image: url(1000012461_Glitch23.jpg);
     }
 
 .card {
-    border: $border-one;
+    border: blue;
     border-radius: $rad;
     background-color: rgb(131, 15, 226);
     margin: 12px 12px 12px 12px;
@@ -168,6 +168,13 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
     color: $whiteSpot;
 }
     
+.card2 {
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+.border-border {
+    background-color: rgba(31, 231, 31, 0.363);
+}
 
 html {
     border: $html-border;
@@ -178,7 +185,7 @@ html {
 body {
     background-image: $body-color;
     border: $body-color2;
-    color: $whiteSpot;
+    color: $color;
     font-family: $primaryFont;
     font-size: $fs;
 }
@@ -229,7 +236,7 @@ nav a:hover {
 h2 {
     background-image: url(CapstonePictures\3.png);
     text-align: end;
-    font-size: 45px;
+    font-size: 25px;
     color: $dropColor;
 }
 
@@ -240,7 +247,7 @@ h2 {
 main {
     background-image: linear-gradient(rgb(116, 255, 213), blue, $whiteSpot);
     border: solid 3px rgb(135, 245, 31);
-    font-family: $secondaryFont;
+    font-family: $moreFont;
 }
 
 p {
@@ -283,6 +290,7 @@ span {
     border-radius: 12px;
     border: 4px solid rgb(27, 26, 26);
     background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
+    color: $background-color;
 }
 
 .brain {
@@ -290,6 +298,10 @@ span {
 
 }
 
+.bg-info {
+    -bs-bg-opacity: 12;
+    background-color: rgb(255, 144, 144) !important;
+}
 .butt {
     border: $border-2;
     padding: $plump;
@@ -339,7 +351,7 @@ header {
 }
 
 .opacity {
-    opacity: 0%;
+    opacity: 90%;
     margin: -180px 17px -58px 9px;
     padding: 40px 20px 7px 14px;
     color: whitesmoke;
