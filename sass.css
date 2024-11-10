@@ -20,7 +20,7 @@
 }
 
 #mixin-button:hover {
-  transform: scale(2) rotate(15deg);
+  transform: scale(2) rotate(77deg);
   transition: transform 2s;
 }
 
@@ -44,22 +44,19 @@ main {
   border-top: 3px solid #555;
   border-left: 5px solid rgba(219, 126, 126, 0.5);
   background-color: rgba(90, 70, 100, 0.722);
-}
-
------------------------------------------------------------------- .brain2 {
   background-color: #7cffc8;
   border-top: 3px solid rgba(77, 251, 235, 0.76);
   border-left: 11px solid rgba(77, 251, 235, 0.76);
   border-radius: 5px;
   padding: 2px 0px 0px 0px;
   margin: -11px 3px 0px 0px;
-  background-image: url(1000012461_Glitch23.jpg);
+  background-image: linear-gradient(linear-gradient(rgb(165, 31, 31), rgb(8, 253, 245), teal));
 }
 
-.card {
+------------------------------------------------------------------ .card {
   border: blue;
   border-radius: 5px;
-  background-color: rgb(131, 15, 226);
+  background-color: rgba(57, 180, 252, 0.888);
   margin: 12px 12px 12px 12px;
   font-size: 35px;
   font-family: CERD1;
@@ -67,11 +64,11 @@ main {
 }
 
 .card2 {
-  background-color: rgba(255, 0, 0, 0.219);
+  background-color: rgb(62, 127, 135);
 }
 
 .border-border {
-  background-color: rgba(31, 231, 31, 0.363);
+  background-color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 }
 
 html {
@@ -85,6 +82,7 @@ body {
   color: rgb(245, 248, 37);
   font-family: CERD;
   font-size: 25px;
+  margin: 77px;
 }
 
 button {
@@ -164,8 +162,9 @@ span {
   background-color: rgb(19, 21, 27);
   border-radius: 5px;
   height: 200px;
-  border: 4px solid aqua;
+  border: 4px solid rgb(110, 247, 247);
   background-image: linear-gradient(black, rgb(0, 5, 8), rgb(40, 88, 85));
+  color: rgba(255, 255, 255, 0.647);
 }
 
 .bigger {
@@ -174,7 +173,7 @@ span {
 
 .borderRadius {
   border-radius: 12px;
-  border: 4px solid rgb(27, 26, 26);
+  border: 2px solid rgba(60, 195, 212, 0.822);
   background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
   color: #00a8f2;
 }
@@ -191,7 +190,7 @@ span {
 
 .bg-info {
   -bs-bg-opacity: 12;
-  background-color: rgb(255, 144, 144) !important;
+  background-color: rgb(121, 8, 8) !important;
 }
 
 .butt {
@@ -232,7 +231,6 @@ header {
 
 .heading-three {
   font-family: CERD1;
-  color: rgba(186, 189, 237, 0.93);
   margin: -5px 0px 0px 7px;
   font-size: 35px;
   padding: 22px;
@@ -250,7 +248,6 @@ header {
   opacity: 90%;
   margin: -180px 17px -58px 9px;
   padding: 40px 20px 7px 14px;
-  color: whitesmoke;
 }
 
 .padding {

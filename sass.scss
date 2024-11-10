@@ -113,9 +113,20 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 
 @mixin animation2 {
-    transform: scale(2) rotate(15deg);
+    transform: scale(2) rotate(77deg);
     transition: transform 2s;
 }
+
+
+@mixin brain2 {
+        background-color: #7cffc8;
+        border-top: 3px solid rgb(77 251 235 / 76%);
+        border-left: 11px solid rgb(77 251 235 / 76%);
+        border-radius: $rad;
+        padding: 2px 0px 0px 0px;
+        margin: -11px 3px 0px 0px;
+        background-image: linear-gradient($innerBanner);
+    }
 
 
 // -------------------------------------------------------------       ----------------------------------------------- 
@@ -146,22 +157,15 @@ main {
 
 #header {
     @include header-styles;
+    @include brain2
   }
 ------------------------------------------------------------------
-.brain2 {
-        background-color: #7cffc8;
-        border-top: 3px solid rgb(77 251 235 / 76%);
-        border-left: 11px solid rgb(77 251 235 / 76%);
-        border-radius: $rad;
-        padding: 2px 0px 0px 0px;
-        margin: -11px 3px 0px 0px;
-        background-image: url(1000012461_Glitch23.jpg);
-    }
+
 
 .card {
     border: blue;
     border-radius: $rad;
-    background-color: rgb(131, 15, 226);
+    background-color: $dropColor;
     margin: 12px 12px 12px 12px;
     font-size: $fontDeluxe;
     font-family: $secondaryFont;
@@ -169,11 +173,11 @@ main {
 }
     
 .card2 {
-    background-color: rgba(255, 0, 0, 0.219);
+    background-color: $propColor;
 }
 
 .border-border {
-    background-color: rgba(31, 231, 31, 0.363);
+    background-color: $gradient-color
 }
 
 html {
@@ -188,6 +192,7 @@ body {
     color: $color;
     font-family: $primaryFont;
     font-size: $fs;
+    margin:  77px;
 }
 
 
@@ -278,8 +283,9 @@ span {
     background-color: rgb(19, 21, 27);
     border-radius: $rad;
     height: 200px;
-    border: 4px solid aqua;
+    border: 4px solid rgb(110, 247, 247);
     background-image: linear-gradient(black, rgb(0, 5, 8), rgb(40, 88, 85));
+    color: $whiteSpot; 
 }
 
 .bigger {
@@ -288,7 +294,7 @@ span {
 
 .borderRadius {
     border-radius: 12px;
-    border: 4px solid rgb(27, 26, 26);
+    border: 2px solid rgba(60, 195, 212, 0.822);
     background-image: linear-gradient(rgba(33, 122, 128, 0.048), rgb(24, 13, 75));
     color: $background-color;
 }
@@ -300,7 +306,7 @@ span {
 
 .bg-info {
     -bs-bg-opacity: 12;
-    background-color: rgb(255, 144, 144) !important;
+    background-color: $coolColor !important;
 }
 .butt {
     border: $border-2;
@@ -336,7 +342,6 @@ header {
 
 .heading-three {
     font-family: $secondaryFont;
-    color: rgba(186, 189, 237, 0.93);
     margin: -5px 0px 0px 7px;
     font-size: $fontDeluxe;
     padding: 22px;
@@ -354,7 +359,6 @@ header {
     opacity: 90%;
     margin: -180px 17px -58px 9px;
     padding: 40px 20px 7px 14px;
-    color: whitesmoke;
 }
 
 .padding {
