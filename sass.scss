@@ -19,23 +19,28 @@ $gradient-color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 $background-color: #00a8f2;
 $html-border: 3px solid blue;
 $nav-border: 3px solid #e0ff71;
-$body-color:  linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
+$body-color: linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
 $body-color2: solid 3px rgba(110, 121, 108, 0.616);
 $color: rgb(245, 248, 37);
-$nav-border: 4px solid rgb(28, 46, 28);
+$nav-border: solid 3px rgb(31, 245, 127);
 $box-shadow: 50px 35px rgba(35, 53, 35, 0.363);
 $text-shadow: 4px 3px rgb(255, 112, 46);
-//  ------------------------------------------------------------    FONTS    ---------------------------------------------------------
+$bg-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
+$marginAround: 12px 12px 12px 12px;
+ //  ------------------------------------------------------------      ---------------------------------------------------------
+
 
 @font-face {
     font-family: "merry";
     src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
 }
 
+
 @font-face {
     font-family: "CERD";
     src: url("Fonts/AnkhSanctuary-PVK0B.ttf");
 }
+
 
 @font-face {
     font-family: "CERD1";
@@ -43,9 +48,33 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 }
 
 
+@mixin borderStyles {
+    border-bottom: 3px solid rgb(37, 33, 33);
+    border-right: 10px solid black;
+    border-top: 5px solid rgb(193, 163, 130);
+    border-left: 7px solid rgb(23, 22, 22);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 12px 12px 12px 12px;
+    background-color: $dropColor;
+    color: $whiteSpot;
+
+}
+
+
+@mixin cardFace {
+    border: $border-2;
+    border-radius: $rad;
+    background-color: $dropColor;
+    margin: $marginAround;
+    font-size: $fontDeluxe;
+    font-family: $secondaryFont;
+    color: $whiteSpot;
+}
+
 @mixin main-styles {
-    // background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
-    border: solid 3px rgb(31, 245, 127);
+    background-image: $bg-image;
+    border: $nav-border;
     padding: 2px 0px 1px 0px;
     margin: -1px 20px 3px 17px;
     opacity: 90%;
@@ -53,13 +82,13 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 
 @mixin header-styles {
-  background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333); // darker gradient
-  margin: 7px;
-  border-bottom: 2px solid #666; // thinner border
-  border-right: 4px solid #444; // thinner border
-  border-top: 3px solid #555; // thinner border
-  border-left: 5px solid rgba(219, 126, 126, 0.5); // softer border
-  background-color: rgba(90, 70, 100, 0.722);
+    background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333); // darker gradient
+    margin: 7px;
+    border-bottom: 2px solid #666; // thinner border
+    border-right: 4px solid #444; // thinner border
+    border-top: 3px solid #555; // thinner border
+    border-left: 5px solid rgba(219, 126, 126, 0.5); // softer border
+    background-color: rgba(90, 70, 100, 0.722);
 }
 
 @mixin brain-styles {
@@ -70,8 +99,8 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
     padding: 2px 0px 0px 0px;
     margin: 1px 3px 0px 0px;
     background-image: url(Images/header1_cr3.png);
-    }
-    
+}
+
 
 @mixin nav-link {
     border: 2px solid #666; // thinner border
@@ -83,7 +112,7 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
     font-size: 18px;
     margin: 1px;
     background-image: linear-gradient($innerBanner);
-  }
+}
 
 
 @mixin banner {
@@ -119,17 +148,27 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 
 @mixin brain2 {
-        background-color: #7cffc8;
-        border-top: 3px solid rgb(77 251 235 / 76%);
-        border-left: 11px solid rgb(77 251 235 / 76%);
-        border-radius: $rad;
-        padding: 2px 0px 0px 0px;
-        margin: -11px 3px 0px 0px;
-        background-image: linear-gradient($innerBanner);
-    }
+    background-color: #7cffc8;
+    border-top: 3px solid rgb(77 251 235 / 76%);
+    border-left: 11px solid rgb(77 251 235 / 76%);
+    border-radius: $rad;
+    padding: 2px 0px 0px 0px;
+    margin: -11px 3px 0px 0px;
+    background-image: linear-gradient($innerBanner);
+}
 
 
-// -------------------------------------------------------------       ----------------------------------------------- 
+// -------------------------------------------------------------++++++++++++++++       ----------------------------------------------- 
+
+.card-face {
+    @include cardFace;
+}
+
+
+.borderNow {
+    @include borderStyles;
+}
+
 .box-shadow {
     @include boxShadow;
 }
@@ -137,7 +176,7 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 #mixin-button {
     @include animation1;
-        
+
 }
 
 
@@ -148,37 +187,33 @@ $text-shadow: 4px 3px rgb(255, 112, 46);
 
 #mixin-example {
     @include boxShadow;
-    @include textShadow;    
+    @include textShadow;
 }
+
 
 main {
     @include main-styles;
-  }
+}
+
 
 #header {
     @include header-styles;
-    @include brain2
-  }
-------------------------------------------------------------------
-
-
-.card {
-    border: blue;
-    border-radius: $rad;
-    background-color: $dropColor;
-    margin: 12px 12px 12px 12px;
-    font-size: $fontDeluxe;
-    font-family: $secondaryFont;
-    color: $whiteSpot;
+    @include brain2;
 }
-    
+
+//---------------------------------------------------------------------++++++++++++++++++++
+
 .card2 {
     background-color: $propColor;
 }
 
+
+
 .border-border {
     background-color: $gradient-color
 }
+
+
 
 html {
     border: $html-border;
@@ -220,17 +255,21 @@ nav {
 
 }
 
+
 nav a {
-    @include nav-link;  
+    @include nav-link;
 }
 
-// nav a B {
-//     max-width: 100px;
-// }
+
+header {
+    @include header-styles;
+}
+
 
 nav a:hover {
     background-image: url(4.jpg);
 }
+
 
 .gallery {
     background-image: url();
@@ -245,15 +284,6 @@ h2 {
     color: $dropColor;
 }
 
-// header {
-//     @include header-styles;
-//   }
-
-main {
-    background-image: linear-gradient(rgb(116, 255, 213), blue, $whiteSpot);
-    border: solid 3px rgb(135, 245, 31);
-    font-family: $moreFont;
-}
 
 p {
 
@@ -263,21 +293,18 @@ p {
     }
 }
 
-span {
-    border: $border-one;
-    padding: plump;
-    background-color: rgb(75, 79, 219);
-}
+
+// -------------------------------------------------------------++++++++++++++++++++       -----------------------------------------------
 
 
-// -------------------------------------------------------------    CLASS SELECTORS    -----------------------------------------------
- .list-group-item-one {
+.list-group-item-one {
     border: $border-one;
     border-radius: $rad;
     background-color: $dropColor;
     font-size: $fs;
     font-family: $secondaryFont;
- }
+}
+
 .banner {
     padding: $cushion;
     background-color: rgb(19, 21, 27);
@@ -285,7 +312,7 @@ span {
     height: 200px;
     border: 4px solid rgb(110, 247, 247);
     background-image: linear-gradient(black, rgb(0, 5, 8), rgb(40, 88, 85));
-    color: $whiteSpot; 
+    color: $whiteSpot;
 }
 
 .bigger {
@@ -308,15 +335,14 @@ span {
     -bs-bg-opacity: 12;
     background-color: $coolColor !important;
 }
+
 .butt {
     border: $border-2;
     padding: $plump;
     font-size: $bigger-font;
-    font-family: Arial, sans-serif;
-    background-color: #24a191;
-    margin: 0;
-    padding: 0;
-    background-image: url(Images\3.jpg);
+    font-family: $secondaryFont;
+    background-color: $propColor;
+    border-radius: $rad;
 }
 
 .divLeft {
@@ -329,53 +355,34 @@ span {
 
 header {
     @include header-styles;
-  }
+}
 
 .heading {
     font-family: $moreFont;
     color: $whiteSpot;
     padding: 1px 2px 2px 0px;
     padding: 10px 56px 0px 7px;
-    // margin: 1px 0px -7px 0px;
-    // border: 3px solid rgb(245, 31, 84);
-}
+    margin: 1px 0px -7px 0px;
 
-.heading-three {
-    font-family: $secondaryFont;
-    margin: -5px 0px 0px 7px;
-    font-size: $fontDeluxe;
-    padding: 22px;
-    display: inline;
-}
+    .heading-three {
+        font-family: $secondaryFont;
+        margin: -5px 0px 0px 7px;
+        font-size: $fontDeluxe;
+        padding: 22px;
+        display: inline;
+    }
 
 .inline {
-    display: inline;
-    margin: -146px 1px 4px 0px;
-    opacity: 29%;
-    background-repeat: repeat-y;
-}
+        display: inline;
+        margin: -146px 1px 4px 0px;
+        opacity: 29%;
+        background-repeat: repeat-y;
+    }
 
 .opacity {
-    opacity: 90%;
-    margin: -180px 17px -58px 9px;
-    padding: 40px 20px 7px 14px;
-}
+        opacity: 90%;
+        margin: -180px 17px -58px 9px; /* this margin is causing the element to be positioned off the screen */
+        padding: 40px 20px 7px 14px;
+    }
 
-.padding {
-    margin: 4px 20px 0px 0px;
-}
-
-.pullup {
-    margin: 1px 2px 30px 40px;
-    padding: 12px 15px 0px 34px;
-}
-
-// .border {
-
-
-//     // border-bottom: 3px solid rgb(37, 33, 33);
-//     border-right: 10px solid black;
-//     // border-top: 5px solid rgb(193, 163, 130);
-//     border-left: 7px solid rgb(23, 22, 22);
-// // 
-// }
+// -------------------------------------------------------------++++++++++++++++++++       -----------------------------------------------

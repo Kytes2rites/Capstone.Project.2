@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     />
     <script src="utility-functions.js"></script>
-    <script src="contact-form.js"></script>    <link href="sass.css" rel="stylesheet" />
+    <script src="form.js"></script>    <link href="sass.css" rel="stylesheet" />
   </head>
   <body class="">
     <header class="pullUp">
@@ -32,7 +32,7 @@
         <p></p>
 
         <div class="text-center">tel: 555-555-5555 OR email 9vS6M@example.com</div><br></p>
-      <form class="border border-3 border-secondary text-center" onsubmit="myProcessForm(event)">
+      <form class="border border-3 border-secondary text-center" onsubmit="handleSubmit(event)">
         <label for="name">Name:</label>
        <input class="text-primary" required type="text" placeholder="John Doe" id="name"><br><br>
         <label for="phone">Phone:</label>

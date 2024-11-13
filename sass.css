@@ -30,6 +30,7 @@
 }
 
 main {
+  background-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
   border: solid 3px rgb(31, 245, 127);
   padding: 2px 0px 1px 0px;
   margin: -1px 20px 3px 17px;
@@ -51,16 +52,6 @@ main {
   padding: 2px 0px 0px 0px;
   margin: -11px 3px 0px 0px;
   background-image: linear-gradient(linear-gradient(rgb(165, 31, 31), rgb(8, 253, 245), teal));
-}
-
------------------------------------------------------------------- .card {
-  border: blue;
-  border-radius: 5px;
-  background-color: rgba(57, 180, 252, 0.888);
-  margin: 12px 12px 12px 12px;
-  font-size: 35px;
-  font-family: CERD1;
-  color: rgba(255, 255, 255, 0.647);
 }
 
 .card2 {
@@ -99,7 +90,7 @@ button:hover {
 
 nav {
   font-family: CERD;
-  border: 4px solid rgb(28, 46, 28);
+  border: solid 3px rgb(31, 245, 127);
   text-align: center;
   color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 }
@@ -197,11 +188,9 @@ span {
   border: 3px solid rgb(245, 31, 84);
   padding: 25px 26px 27px 50px;
   font-size: 40px;
-  font-family: Arial, sans-serif;
-  background-color: #24a191;
-  margin: 0;
-  padding: 0;
-  background-image: url(Images\3 .jpg);
+  font-family: CERD1;
+  background-color: rgb(62, 127, 135);
+  border-radius: 5px;
 }
 
 .divLeft {
@@ -227,6 +216,8 @@ header {
   color: rgba(255, 255, 255, 0.647);
   padding: 1px 2px 2px 0px;
   padding: 10px 56px 0px 7px;
+  margin: 1px 0px -7px 0px;
+  border: 3px solid rgb(245, 31, 84);
 }
 
 .heading-three {
@@ -257,4 +248,18 @@ header {
 .pullup {
   margin: 1px 2px 30px 40px;
   padding: 12px 15px 0px 34px;
-}/*# sourceMappingURL=sass.css.map */
+}
+
+.border {
+  border-bottom: 3px solid rgb(37, 33, 33);
+  border-right: 10px solid black;
+  border-top: 5px solid rgb(193, 163, 130);
+  border-left: 7px solid rgb(23, 22, 22);
+  border-radius: 12px;
+  padding: 12px 12px 12px 12px;
+  margin: 12px 12px 12px 12px;
+  background-color: rgba(57, 180, 252, 0.888);
+  color: rgba(255, 255, 255, 0.647);
+}/*# sourceMappingURL=sass.css.map */     datalist {
+  display: none;
+}   javascript ARR
