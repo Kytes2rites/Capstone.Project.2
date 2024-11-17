@@ -4,14 +4,7 @@
         "sound": "userGesture",
         "announcement": "always"
     },
-    "explorer.fileNesting.patterns": {
-        "package.json": "",
-        "*.tsx": "",
-        "tsconfig.json": "",
-        "*.jsx": "",
-        "*.js": "",
-        "*.ts": ""
-    },
+
     "search.exclude": {
         "**/*.code-search": false,
         "**/bower_components": false,
@@ -31,5 +24,8 @@
     "javascript.format.insertSpaceAfterConstructor": true,
     "liveSassCompile.settings.autoprefix": [
         
-    ]
+    ],
+    "python.analysis.aiCodeActions": {
+        "implementAbstractClasses": false
+    }
 }
