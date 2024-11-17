@@ -1,45 +1,45 @@
 $dropColor: rgba(57, 180, 252, 0.888);
 $coolColor: rgb(121, 8, 8);
-$primaryFont: CERD;
-$secondaryFont: CERD1;
-$moreFont: merry;
-$cushion: 0px 0px 0px 29px;
-$lessCush: 5px 15px 5px 21px;
-$rad: 5px;
+$primaryFont: CERD1;
+// $secondaryFont: CERD1;
+// $moreFont: merry;
+// $font: ALKY;
+$rad: 15px;
 $fs: 25px;
 $border-one: 5px solid rgba(83, 241, 214, 0.826);
 $propColor: rgb(62, 127, 135);
 $whiteSpot: rgba(255, 255, 255, 0.647);
-$border-2: 3px solid rgb(245, 31, 84);
-$plump: 25px 26px 27px 50px;
+// $border-2: 3px solid rgb(245, 31, 84);
+$verticalRepeat: no-repeat repeat;
 $bigger-font: 40px;
 $fontDeluxe: 35px;
-$innerBanner: linear-gradient(rgb(165, 31, 31), rgb(8, 253, 245), teal);
-$gradient-color: linear-gradient(black, rgb(7, 8, 8), rgb(238, 225, 209));
 $background-color: #00a8f2;
-$html-border: 3px solid blue;
-$nav-border: 3px solid #e0ff71;
+// $html-border: 3px solid rgba(88, 88, 196, 0.692);
 $body-color: linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
-$body-color2: solid 3px rgba(110, 121, 108, 0.616);
-$color: rgb(245, 248, 37);
-$nav-border: solid 3px rgb(31, 245, 127);
-$box-shadow: 50px 35px rgba(35, 53, 35, 0.363);
-$text-shadow: 4px 3px rgb(255, 112, 46);
-$bg-image: linear-gradient(rgba(104, 216, 142, 0.623), rgb(238, 199, 144));
-$marginAround: 12px 12px 12px 12px;
+$body-color2: solid 6px rgba(255, 1, 255, 0.788);
+$color: rgb(106, 183, 255);
+$box-shadow: 3px 7px rgba(189, 108, 255, 0.363);
+$text-shadow: 2px 2px rgb(97, 23, 60);
+// $marginAround: 12px 12px 12px 12px;
+$body-color1: linear-gradient(rgba(17, 80, 85, 0.623), rgba(20, 13, 53, 0.925), rgb(76, 140, 235));
  //  ------------------------------------------------------------      ---------------------------------------------------------
 
+// @font-face {
+//     font-family: "ALKY";
+//     src: url("Fonts/AltronedtrialRegular-E4pYl.otf");
+// }
 
-@font-face {
-    font-family: "merry";
-    src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
-}
+
+// @font-face {
+//     font-family: "merry";
+//     src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
+// }
 
 
-@font-face {
-    font-family: "CERD";
-    src: url("Fonts/AnkhSanctuary-PVK0B.ttf");
-}
+// @font-face {
+//     font-family: "CERD";
+//     src: url("Fonts/AnkhSanctuary-PVK0B.ttf");
+// }
 
 
 @font-face {
@@ -48,80 +48,12 @@ $marginAround: 12px 12px 12px 12px;
 }
 
 
-@mixin borderStyles {
-    border-bottom: 3px solid rgb(37, 33, 33);
-    border-right: 10px solid black;
-    border-top: 5px solid rgb(193, 163, 130);
-    border-left: 7px solid rgb(23, 22, 22);
-    border-radius: 12px;
-    padding: 12px 12px 12px 12px;
-    margin: 12px 12px 12px 12px;
-    background-color: $dropColor;
-    color: $whiteSpot;
-
-}
-
-
-@mixin cardFace {
-    border: $border-2;
-    border-radius: $rad;
-    background-color: $dropColor;
-    margin: $marginAround;
-    font-size: $fontDeluxe;
-    font-family: $secondaryFont;
-    color: $whiteSpot;
-}
-
 @mixin main-styles {
-    background-image: $bg-image;
-    border: $nav-border;
+
+    // border: $nav-border;
     padding: 2px 0px 1px 0px;
     margin: -1px 20px 3px 17px;
     opacity: 90%;
-}
-
-
-@mixin header-styles {
-    background-image: linear-gradient(rgba(105, 255, 193, 0.623), rgb(238, 199, 144), #333); // darker gradient
-    margin: 7px;
-    border-bottom: 2px solid #666; // thinner border
-    border-right: 4px solid #444; // thinner border
-    border-top: 3px solid #555; // thinner border
-    border-left: 5px solid rgba(219, 126, 126, 0.5); // softer border
-    background-color: rgba(90, 70, 100, 0.722);
-}
-
-@mixin brain-styles {
-    background-color: #7cffc8;
-    border-top: 3px solid rgb(77 251 235 / 76%);
-    border-left: 3px solid rgb(77 251 235 / 76%);
-    border-radius: $rad;
-    padding: 2px 0px 0px 0px;
-    margin: 1px 3px 0px 0px;
-    background-image: url(Images/header1_cr3.png);
-}
-
-
-@mixin nav-link {
-    border: 2px solid #666; // thinner border
-    color: $whiteSpot !important;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-image: url(header1_cr3.png);
-    font-size: 18px;
-    margin: 1px;
-    background-image: linear-gradient($innerBanner);
-}
-
-
-@mixin banner {
-    padding: $cushion;
-    background-color: rgb(19, 21, 27);
-    border-radius: $rad;
-    height: 200px;
-    border: $border-one;
-    background-image: $innerBanner;
 }
 
 
@@ -147,27 +79,12 @@ $marginAround: 12px 12px 12px 12px;
 }
 
 
-@mixin brain2 {
-    background-color: #7cffc8;
-    border-top: 3px solid rgb(77 251 235 / 76%);
-    border-left: 11px solid rgb(77 251 235 / 76%);
-    border-radius: $rad;
-    padding: 2px 0px 0px 0px;
-    margin: -11px 3px 0px 0px;
-    background-image: linear-gradient($innerBanner);
-}
-
-
 // -------------------------------------------------------------++++++++++++++++       ----------------------------------------------- 
 
-.card-face {
-    @include cardFace;
+h3 {
+    font-family: $primaryFont;
 }
 
-
-.borderNow {
-    @include borderStyles;
-}
 
 .box-shadow {
     @include boxShadow;
@@ -180,7 +97,7 @@ $marginAround: 12px 12px 12px 12px;
 }
 
 
-#mixin-button:hover {
+.mixin-button:hover {
     @include animation2;
 }
 
@@ -196,44 +113,22 @@ main {
 }
 
 
-#header {
-    @include header-styles;
-    @include brain2;
-}
-
 //---------------------------------------------------------------------++++++++++++++++++++
 
-.card2 {
-    background-color: $propColor;
-}
 
-
-
-.border-border {
-    background-color: $gradient-color
-}
-
-
-
-html {
-    border: $html-border;
-    background-color: $background-color;
-
-}
 
 body {
-    background-image: $body-color;
+    background-color: #2815d6c7;
     border: $body-color2;
     color: $color;
-    font-family: $primaryFont;
+    // font-family: $secondaryFont;
     font-size: $fs;
-    margin:  77px;
+    margin:  7px;
 }
 
 
 button {
-    font-family: $secondaryFont;
-    padding: $cushion;
+    // font-family: $secondaryFont;
     border-radius: $rad;
     background-color: $dropColor;
     font-size: $fs;
@@ -248,52 +143,39 @@ button {
 
 
 nav {
-    font-family: $primaryFont;
-    border: $nav-border;
+    background-image: $body-color;
+    // font-family: $moreFont;
+    // border: $nav-border;
     text-align: center;
-    color: $gradient-color;
-
+    text-shadow: $text-shadow;
+    color: $color;
+    & a:hover {
+        background-image: url(4.jpg);
+    }
+    
 }
 
-
-nav a {
-    @include nav-link;
+.backgroundColor { 
+    background-image: $body-color;
 }
 
-
-header {
-    @include header-styles;
-}
-
-
-nav a:hover {
-    background-image: url(4.jpg);
-}
-
-
-.gallery {
-    background-image: url();
-    font-family: $secondaryFont;
+.backgroundColor-2 {
+    background-image: $body-color1;
 }
 
 
 h2 {
-    background-image: url(CapstonePictures\3.png);
     text-align: end;
     font-size: 25px;
     color: $dropColor;
 }
 
-
-p {
-
-    &.cardDesc1 {
-        margin: 12px 12px 12px 12px;
-        padding: 12px 12px 12px 12px;
-    }
+.body1 {
+    background-image: url("CapstonePictures/art5.jpg");
+    background-repeat: $verticalRepeat;
+    background-size: 100% 50%;
 }
-
-
+    
 // -------------------------------------------------------------++++++++++++++++++++       -----------------------------------------------
 
 
@@ -302,11 +184,10 @@ p {
     border-radius: $rad;
     background-color: $dropColor;
     font-size: $fs;
-    font-family: $secondaryFont;
+    // font-family: $secondaryFont;
 }
 
 .banner {
-    padding: $cushion;
     background-color: rgb(19, 21, 27);
     border-radius: $rad;
     height: 200px;
@@ -326,21 +207,16 @@ p {
     color: $background-color;
 }
 
-.brain {
-    @include brain-styles;
-
-}
 
 .bg-info {
-    -bs-bg-opacity: 12;
+    -bs-bg-opacity: 50%;
     background-color: $coolColor !important;
 }
 
 .butt {
-    border: $border-2;
-    padding: $plump;
+    // border: $border-2;
     font-size: $bigger-font;
-    font-family: $secondaryFont;
+    // font-family: $secondaryFont;
     background-color: $propColor;
     border-radius: $rad;
 }
@@ -353,36 +229,43 @@ p {
     display: inline;
 }
 
-header {
-    @include header-styles;
-}
-
 .heading {
-    font-family: $moreFont;
+    // font-family: $font;
     color: $whiteSpot;
     padding: 1px 2px 2px 0px;
     padding: 10px 56px 0px 7px;
     margin: 1px 0px -7px 0px;
+}
 
-    .heading-three {
-        font-family: $secondaryFont;
-        margin: -5px 0px 0px 7px;
-        font-size: $fontDeluxe;
-        padding: 22px;
-        display: inline;
-    }
 
-.inline {
-        display: inline;
-        margin: -146px 1px 4px 0px;
-        opacity: 29%;
-        background-repeat: repeat-y;
-    }
+
+.heading-three {
+    // font-family: $secondaryFont;
+    margin: -5px 0px 0px 7px;
+    font-size: $fontDeluxe;
+    padding: 22px;
+    display: inline;
+}
+
+
+
+
+// .inline {
+//     display: inline;
+//     margin: -146px 1px 4px 0px;
+//     opacity: 29%;
+//     background-repeat: repeat-y;
+// }
+
+
+.cool {
+    // font-family: $font;
+}
+
+
 
 .opacity {
-        opacity: 90%;
-        margin: -180px 17px -58px 9px; /* this margin is causing the element to be positioned off the screen */
-        padding: 40px 20px 7px 14px;
-    }
-
-// -------------------------------------------------------------++++++++++++++++++++       -----------------------------------------------
+    opacity: 9;
+    margin: -180px 17px -58px 9px; /* this margin is causing the element to be positioned off the screen */
+    padding: 40px 20px 7px 14px;
+}

@@ -29,7 +29,7 @@ function getServerResponse2(resolve) {
     
     function activateResolve() {
         const response = {
-        message: "Receieved! We Will be in touch!",
+        message: "Recieved! We Will be in touch!",
         };
         const resolveValue = JSON.stringify(response);
         resolve(resolveValue);

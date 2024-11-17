@@ -1,85 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Paradise Parking</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script src="utility-functions.js"></script>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body class="bg bg-dark">
-    <img
-      class="border border-5"
-      width="100%"
-      height="211"
-      alt="parkinglot"
-      src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/SEC0216-parking-feature-slide5_900px.jpg?v=1726056485855"
-    />
-    <header>
-      <nav class="nav nav-pills nav justify-content-end bg bg-white">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="nav-link active" href="about.html">About Us</a>
-      </nav>
-    </header>
-    <main id="mainTag">
+
+<head>
+  <title>Paradise Parking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="utility-functions.js"></script>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="sass.css" rel="stylesheet">
+</head>
+
+<body class="bg bg-dark">
+  <img class="border border-5" width="100%" height="211" alt="parkinglot"
+    src="https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/SEC0216-parking-feature-slide5_900px.jpg?v=1726056485855" />
+  <header>
+    <nav class="nav nav-pills nav justify-content-end bg bg-white">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link active" href="about.html">About Us</a>
+    </nav>
+  </header>
+  <main id="mainTag">
+    <h2 class="text-center pt-3 text-primary">
+      <p class="border border-5 border-info bg-black p-2 text-info rounded text-center">
       <h2 class="text-center pt-3 text-primary">
-        <p class="border border-5 border-info bg-black p-2 text-info rounded text-center"><h2 class="text-center pt-3 text-primary">
-      <script>
-//        debugger
-        const card1 = {};
-        card1.src =
-          "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/Large-Parking-Lot-Commercial-Paving.jpg?v=1726056561723";
-        card1.title = "We have the best spaces!";
-        card1.description = "Voted #1 in Parking Times Magazine.";
+        <script>
+          //        debugger
+          const card1 = {};
+          card1.src =
+            "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/Large-Parking-Lot-Commercial-Paving.jpg?v=1726056561723";
+          card1.title = "We have the best spaces!";
+          card1.description = "Voted #1 in Parking Times Magazine.";
 
-        const card2 = {};
-        card2.src =
-          "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/590ef44cf89729ee34ba27e3d990ec52.jpg?v=1726056515009";
-        card2.title = "Our customer service can't be beat!";
-        card2.description = "Community Choice Awards winner 3 years in a row!";
+          const card2 = {};
+          card2.src =
+            "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/590ef44cf89729ee34ba27e3d990ec52.jpg?v=1726056515009";
+          card2.title = "Our customer service can't be beat!";
+          card2.description = "Community Choice Awards winner 3 years in a row!";
 
-        const card3 = {};
-        card3.src =
-          "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/b7918603271e3f85e81c1fb4cbcd8807.jpg?v=1726056526878";
-        card3.title = "Parking Place at the greatest parking place! ";
-        card3.description = "Paradise Parkers";
+          const card3 = {};
+          card3.src =
+            "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/b7918603271e3f85e81c1fb4cbcd8807.jpg?v=1726056526878";
+          card3.title = "Parking Place at the greatest parking place! ";
+          card3.description = "Paradise Parkers";
 
-        const cards = [card1, card2, card3];
-        for (position = 0; position < cards.length; position++) {
-          const card = cards[position];
-          const cardString = convertCard(card);
-          mainTag.innerHTML = mainTag.innerHTML + cardString;
-        }
-        // const card1String = convertCard( card1 );
-        // const card2String = convertCard( card2 );
-        // const card3String = convertCard( card3 );
+          const cards = [card1, card2, card3];
+          for (position = 0; position < cards.length; position++) {
+            const card = cards[position];
+            const cardString = convertCard(card);
+            mainTag.innerHTML = mainTag.innerHTML + cardString;
+          }
+          // const card1String = convertCard( card1 );
+          // const card2String = convertCard( card2 );
+          // const card3String = convertCard( card3 );
 
-        mainTag.innerHTML = mainTag.innerHTML + card1String;
-        mainTag.innerHTML = mainTag.innerHTML + card2String;
-        mainTag.innerHTML = mainTag.innerHTML + card3String;
-      </script>
-    </main>
-    <footer style="text-align: center; color: indianred">
-      <form>
-        <p>Rate this spot</p>
-        <input id="1 star" type="radio" name="stars" /><label for="1star"
-          >1star</label
-        >
-        <input id="2 star" type="radio" name="stars" /><label for="2star"
-          >2star</label
-        >
-        <input id="3 star" type="radio" name="stars" /><label for="3star"
-          >3star</label
-        >
-      </form>
-      <br />
-      Websyte Lyte
-    </footer>
-  </body>
+          mainTag.innerHTML = mainTag.innerHTML + card1String;
+          mainTag.innerHTML = mainTag.innerHTML + card2String;
+          mainTag.innerHTML = mainTag.innerHTML + card3String;
+        </script>
+  </main>
+  <footer style="text-align: center; color: indianred">
+    <form>
+      <p>Rate this spot</p>
+      <input id="1 star" type="radio" name="stars" /><label for="1star">1star</label>
+      <input id="2 star" type="radio" name="stars" /><label for="2star">2star</label>
+      <input id="3 star" type="radio" name="stars" /><label for="3star">3star</label>
+    </form>
+    <br />
+    Websyte Lyte
+  </footer>
+</body>
+
 </html>
