@@ -1,8 +1,8 @@
 $dropColor: rgba(57, 180, 252, 0.888);
 $coolColor: rgb(121, 8, 8);
 $primaryFont: CERD1;
-// $secondaryFont: CERD1;
-// $moreFont: merry;
+$secondaryFont: CERD1;
+$moreFont: merry;
 // $font: ALKY;
 $rad: 15px;
 $fs: 25px;
@@ -30,10 +30,10 @@ $body-color1: linear-gradient(rgba(17, 80, 85, 0.623), rgba(20, 13, 53, 0.925), 
 // }
 
 
-// @font-face {
-//     font-family: "merry";
-//     src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
-// }
+@font-face {
+    font-family: "merry";
+    src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
+}
 
 
 // @font-face {
@@ -128,7 +128,7 @@ body {
 
 
 button {
-    // font-family: $secondaryFont;
+    font-family: $secondaryFont;
     border-radius: $rad;
     background-color: $dropColor;
     font-size: $fs;
@@ -144,7 +144,7 @@ button {
 
 nav {
     background-image: $body-color;
-    // font-family: $moreFont;
+    font-family: $moreFont;
     // border: $nav-border;
     text-align: center;
     text-shadow: $text-shadow;

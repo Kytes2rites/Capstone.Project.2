@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "merry";
+  src: url("Fonts/MerrysPersonalUse-KVM77.ttf");
+}
+@font-face {
   font-family: "CERD1";
   src: url("Fonts/CeniosroundedExtruderightDemo-drvpR.otf");
 }
@@ -40,6 +44,7 @@ body {
 }
 
 button {
+  font-family: CERD1;
   border-radius: 15px;
   background-color: rgba(57, 180, 252, 0.888);
   font-size: 25px;
@@ -51,6 +56,7 @@ button:hover {
 
 nav {
   background-image: linear-gradient(rgba(99, 199, 206, 0.623), rgb(24, 13, 75));
+  font-family: merry;
   text-align: center;
   text-shadow: 2px 2px rgb(97, 23, 60);
   color: rgb(106, 183, 255);
